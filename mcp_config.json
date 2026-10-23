@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "mcp": {
+      "serverUrl": "https://zprojects.zohomcp.com/mcp/message"
+    }
+  }
+}

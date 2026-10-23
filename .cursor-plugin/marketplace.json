@@ -1,0 +1,18 @@
+{
+  "name": "zoho-projects",
+  "owner": {
+    "name": "Zoho Projects",
+    "email": "support@zohoprojects.com"
+  },
+  "metadata": {
+    "description": "Zoho Projects plugin for Cursor.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "zoho-projects",
+      "source": "./",
+      "description": "Manage Zoho Projects tasks, issues and time logs with confirmation before every change."
+    }
+  ]
+}

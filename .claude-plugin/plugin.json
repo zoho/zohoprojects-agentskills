@@ -1,0 +1,48 @@
+{
+  "name": "zoho-projects",
+  "version": "0.1.0",
+  "description": "Connect Zoho Projects to Claude to turn tasks and issues into working code. Access project context, investigate bugs, and update work items as you develop.",
+  "author": {
+    "name": "Zoho Projects",
+    "email": "support@zohoprojects.com",
+    "url": "https://www.zoho.com/projects/"
+  },
+  "homepage": "https://www.zoho.com/projects/",
+  "license": "Apache-2.0",
+  "keywords": [
+    "zoho",
+    "zoho-projects",
+    "project-management",
+    "portfolio-management",
+    "tasks",
+    "issues",
+    "timesheets",
+    "time-tracking",
+    "custom-modules"
+  ],
+  "userConfig": {
+    "zoho_dc": {
+      "type": "string",
+      "title": "Zoho data center",
+      "description": "Domain suffix of the Zoho site you sign in to Zoho Projects at. Canada is ca.",
+      "options": ["com", "eu", "in", "com.au", "ca", "sa", "jp", "ae", "uk"],
+      "default": "com"
+    }
+  },
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://zprojects.zohomcp.${user_config.zoho_dc}/mcp/message",
+        "--transport",
+        "http-only"
+      ],
+      "env": {
+        "MCP_REMOTE_CONFIG_DIR": "${CLAUDE_PLUGIN_DATA}/mcp-auth"
+      }
+    }
+  },
+  "hooks": "./hosts/claude/hooks.json"
+}

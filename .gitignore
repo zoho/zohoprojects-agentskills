@@ -1,0 +1,9 @@
+.mcp.json
+.claude/settings.local.json
+.memsearch/
+node_modules/
+.DS_Store
+
+# Plugin hook scripts must be tracked even if a global gitignore excludes scripts/
+!scripts/
+!scripts/**

@@ -1,0 +1,31 @@
+{
+  "name": "zoho-projects",
+  "displayName": "Zoho Projects",
+  "version": "0.1.0",
+  "description": "Connect Zoho Projects to Antigravity to turn tasks and issues into working code. Access project context, investigate bugs, and update work items as you develop.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Show my open tasks and issues in Zoho Projects.",
+    "Help me implement a Zoho Projects task or fix an issue in this repository.",
+    "Update my task with the changes made and tests performed and log 2 hours today for it."
+  ],
+  "keywords": [
+    "zoho",
+    "zoho-projects",
+    "project-management",
+    "portfolio-management",
+    "tasks",
+    "issues",
+    "timesheets",
+    "time-tracking",
+    "custom-modules"
+  ],
+  "author": {
+    "name": "Zoho Projects",
+    "email": "support@zohoprojects.com",
+    "url": "https://www.zoho.com/projects/"
+  },
+  "homepage": "https://www.zoho.com/projects/",
+  "repository": "https://github.com/zoho/zohoprojects-agentskills",
+  "license": "Apache-2.0"
+}

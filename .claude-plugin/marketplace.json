@@ -1,0 +1,15 @@
+{
+  "name": "zoho-projects",
+  "description": "Zoho Projects plugin for Claude Code.",
+  "owner": {
+    "name": "Zoho Projects",
+    "email": "support@zohoprojects.com"
+  },
+  "plugins": [
+    {
+      "name": "zoho-projects",
+      "source": "./",
+      "description": "Manage Zoho Projects tasks, issues and time logs with confirmation before every change."
+    }
+  ]
+}

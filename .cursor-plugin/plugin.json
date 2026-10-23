@@ -1,0 +1,63 @@
+{
+  "name": "zoho-projects",
+  "version": "0.1.0",
+  "description": "Connect Zoho Projects to Cursor to turn tasks and issues into working code. Access project context, investigate bugs, and update work items as you develop.",
+  "author": {
+    "name": "Zoho Projects",
+    "email": "support@zohoprojects.com",
+    "url": "https://www.zoho.com/projects/"
+  },
+  "homepage": "https://www.zoho.com/projects/",
+  "license": "Apache-2.0",
+  "keywords": [
+    "zoho",
+    "zoho-projects",
+    "project-management",
+    "portfolio-management",
+    "tasks",
+    "issues",
+    "timesheets",
+    "time-tracking",
+    "custom-modules"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://zprojects.zohomcp.${ZOHO_DC}/mcp/message",
+        "--transport",
+        "http-only"
+      ]
+    }
+  },
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ZOHO_DC": {
+        "type": "string",
+        "title": "Zoho data center",
+        "description": "Domain suffix of the Zoho site you sign in to Zoho Projects at. Canada is ca.",
+        "enum": [
+          "com",
+          "eu",
+          "in",
+          "com.au",
+          "ca",
+          "sa",
+          "jp",
+          "ae",
+          "uk"
+        ],
+        "default": "com"
+      }
+    },
+    "required": [
+      "ZOHO_DC"
+    ]
+  }
+}

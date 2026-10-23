@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "ZohoProjects_(?:[a-z0-9_]*_)?(?:delete|trash|deactivate|disassociate|dissociate|remove|unlink)_|ZohoProjects_move_entities_to_trash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/guard-destructive.mjs\" --host claude",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
